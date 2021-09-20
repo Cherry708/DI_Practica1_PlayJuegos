@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DI_Practica1_PlayJuegos</string>
+    <string name="play_juegos">Play Juegos</string>
+    <string name="play">Play</string>
+    <string name="new_player">New Player</string>
+    <string name="preferences">PREFERENCES</string>
+    <string name="about">About</string>
+</resources>
