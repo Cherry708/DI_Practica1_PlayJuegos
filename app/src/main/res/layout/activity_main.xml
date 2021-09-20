@@ -16,11 +16,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
         android:gravity="center_vertical"
-        android:text="@string/play_juegos" />
+        android:text="@string/play_juegos"
+        android:textSize="24sp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnPlay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -33,7 +36,7 @@
         android:textAlignment="center" />
 
     <Button
-        android:id="@+id/button1:"
+        android:id="@+id/btnNewPlayer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -46,7 +49,7 @@
         android:textAlignment="center" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnPreferences"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -59,7 +62,7 @@
         android:textAlignment="center" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnAbout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
