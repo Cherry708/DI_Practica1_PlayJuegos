@@ -11,7 +11,8 @@
         android:theme="@style/Theme.DI_Practica1_PlayJuegos">
         <activity
             android:name=".NewPlayer"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/newPlayer"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
