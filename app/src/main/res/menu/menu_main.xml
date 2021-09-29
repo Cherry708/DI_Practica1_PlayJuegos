@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
 
     <item android:id="@+id/action_settings"
-        android:title="@string/action_settings"
+        android:title="@string/action_genero"
         android:orderInCategory="100"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="never" />
 
     <!--Action search es un componente que almacenara aquellos que tengan showAsAction never por defecto -->
     <!--No necesita listener para mostrar un desplegable cuando se hace click en el -->
@@ -13,7 +13,7 @@
         android:title="@string/action_search"
         android:icon="@android:drawable/ic_menu_search"
         android:orderInCategory="100"
-        app:showAsAction="never" />
+        app:showAsAction="ifRoom" />
 
     <item android:id="@+id/action_add"
         android:title="@string/action_add"

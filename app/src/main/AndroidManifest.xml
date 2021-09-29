@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DI_Practica1_PlayJuegos">
         <activity
+            android:name=".Generos"
+            android:exported="true" />
+        <activity
             android:name=".NewPlayer"
             android:exported="true"
-            android:theme="@style/newPlayer"/>
+            android:theme="@style/newPlayer" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

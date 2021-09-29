@@ -1,73 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copiamos el layout anterior de layout y lo movemos al directorio creado layout-land -->
 <!-- Conservaremos la ID de los componentes pero deberemos rediseñar la interfaz para landscape -->
+
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
     android:gravity="center_vertical"
     android:orientation="horizontal"
     android:stretchColumns="*"
     tools:context=".MainActivity">
 
-    <TableRow
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="8dp">
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:stretchColumns="*"
+        tools:context=".MainActivity">
 
-        <TextView
+        <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_column="0"
-            android:layout_gravity="center"
-            android:layout_span="2"
-            android:text="@string/play_juegos"
-            android:textSize="24sp" />
-    </TableRow>
+            android:layout_height="match_parent"
+            android:layout_marginBottom="32dp">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btnPlay"
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_span="2"
+                android:text="@string/play_juegos"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_column="0"
-            android:layout_margin="8dp"
-            android:text="@string/play" />
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btnNewPlayer"
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="8dp"
+                android:text="@string/play"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnNewPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity=""
+                android:layout_margin="8dp"
+                android:text="@string/new_player"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_column="1"
-            android:layout_margin="8dp"
-            android:text="@string/new_player" />
-    </TableRow>
+            android:layout_height="match_parent">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btnPreferences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="8dp"
+                android:text="@string/preferences"
+                android:textAlignment="center" />
 
-        <Button
-            android:id="@+id/btnPreferences"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_column="0"
-            android:layout_margin="8dp"
-            android:text="@string/preferences" />
+            <Button
+                android:id="@+id/btnAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_margin="8dp"
+                android:text="@string/about"
+                android:textAlignment="center" />
 
-        <Button
-            android:id="@+id/btnAbout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_column="1"
-            android:layout_margin="8dp"
-            android:text="@string/about" />
-
-    </TableRow>
+        </TableRow>
+    </TableLayout>
 </TableLayout>
