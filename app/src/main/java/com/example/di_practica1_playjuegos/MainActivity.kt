@@ -10,6 +10,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.res.ResourcesCompat
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,8 +29,10 @@ class MainActivity : AppCompatActivity() {
         val tvTitle = findViewById<TextView>(R.id.tvTitle)
         tvTitle.typeface = ResourcesCompat.getFont(this, R.font.courgetteregular)
 
+        //Toolbar
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
+
 
 
 
