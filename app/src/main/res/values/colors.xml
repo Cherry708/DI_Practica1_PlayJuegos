@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="primaryColor">#6a1b9a</color>
+    <color name="primaryLightColor">#9c4dcc</color>
+    <color name="primaryDarkColor">#38006b</color>
+    <color name="secondaryColor">#c2185b</color>
+    <color name="secondaryLightColor">#fa5788</color>
+    <color name="secondaryDarkColor">#8c0032</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#ffffff</color>
+</resources>
+<!-- Rojo-Marron
+<resources>
     <color name="primaryColor">#bf360c</color>
     <color name="primaryLightColor">#f9683a</color>
     <color name="primaryDarkColor">#870000</color>
@@ -9,3 +20,4 @@
     <color name="primaryTextColor">#ffffff</color>
     <color name="secondaryTextColor">#ffffff</color>
 </resources>
+-->
