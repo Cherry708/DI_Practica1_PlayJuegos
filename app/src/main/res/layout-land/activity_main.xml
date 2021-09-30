@@ -67,7 +67,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
-                android:layout_gravity=""
                 android:layout_margin="8dp"
                 android:text="@string/new_player"
                 android:textAlignment="center" />

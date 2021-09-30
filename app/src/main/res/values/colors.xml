@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="primaryColor">#6a1b9a</color>
-    <color name="primaryLightColor">#9c4dcc</color>
-    <color name="primaryDarkColor">#38006b</color>
-    <color name="secondaryColor">#c2185b</color>
-    <color name="secondaryLightColor">#fa5788</color>
-    <color name="secondaryDarkColor">#8c0032</color>
-    <color name="primaryTextColor">#ffffff</color>
-    <color name="secondaryTextColor">#ffffff</color>
-</resources>
-<!-- Rojo-Marron
+<!--
 <resources>
     <color name="primaryColor">#bf360c</color>
     <color name="primaryLightColor">#f9683a</color>
     <color name="primaryDarkColor">#870000</color>
-    <color name="secondaryColor">#3e2723</color>
-    <color name="secondaryLightColor">#6a4f4b</color>
-    <color name="secondaryDarkColor">#1b0000</color>
+    <color name="secondaryColor">#6d4c41</color>
+    <color name="secondaryLightColor">#9c786c</color>
+    <color name="secondaryDarkColor">#40241a</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#ffffff</color>
+</resources>
+<resources>
+    <color name="primaryColor">#455a64</color>
+    <color name="primaryLightColor">#718792</color>
+    <color name="primaryDarkColor">#1c313a</color>
+    <color name="secondaryColor">#006064</color>
+    <color name="secondaryLightColor">#428e92</color>
+    <color name="secondaryDarkColor">#00363a</color>
     <color name="primaryTextColor">#ffffff</color>
     <color name="secondaryTextColor">#ffffff</color>
 </resources>
 -->
+<resources>
+<color name="primaryColor">#006064</color>
+<color name="primaryLightColor">#428e92</color>
+<color name="primaryDarkColor">#00363a</color>
+<color name="secondaryColor">#455a64</color>
+<color name="secondaryLightColor">#718792</color>
+<color name="secondaryDarkColor">#1c313a</color>
+<color name="primaryTextColor">#ffffff</color>
+<color name="secondaryTextColor">#ffffff</color>
+</resources>

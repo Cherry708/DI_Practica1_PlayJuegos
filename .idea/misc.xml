@@ -10,9 +10,10 @@
         <entry key="app/src/main/res/drawable/ic_navigationAdd_background.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/drawable/ic_navigationAdd_foreground.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.22530864197530864" />
+        <entry key="app/src/main/res/layout-land/activity_new_player.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_generos.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_new_player.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_new_player.xml" value="0.33" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.25" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_navigationAdd.xml" value="0.17407407407407408" />
       </map>

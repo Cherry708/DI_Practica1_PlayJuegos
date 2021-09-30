@@ -95,14 +95,15 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="80dp"
             android:layout_marginEnd="44dp"
-            app:layout_constraintEnd_toStartOf="@+id/button"
+            app:layout_constraintEnd_toStartOf="@+id/btnChange"
             app:layout_constraintStart_toEndOf="@+id/imgvCameraIcon"
             app:layout_constraintTop_toBottomOf="@+id/etNickname"
             app:srcCompat="@android:drawable/sym_def_app_icon"
             android:contentDescription="@string/todo" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnChange"
+            style="@style/buttonColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="272dp"
