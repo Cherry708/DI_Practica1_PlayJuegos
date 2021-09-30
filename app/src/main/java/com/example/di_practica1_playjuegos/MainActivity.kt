@@ -10,8 +10,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.res.ResourcesCompat
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,9 +19,11 @@ class MainActivity : AppCompatActivity() {
         //Busacmos y asignamos el view/componente a un objeto(inferido como button)
         //btnNewPlayer en lugar de jugador, es buena practica?
         val btnNewPlayer = findViewById(R.id.btnNewPlayer) as Button
-
         //Añadimos listener a ese objeto button y le suministramos la actividad que llevara a cabo
         btnNewPlayer.setOnClickListener { lanzaNewPlayer() }
+
+        val btnPreferences = findViewById<Button>(R.id.btnPreferences)
+        btnPreferences.setOnClickListener { lanzaPreferences() }
 
         //Cambiamos la fuente del titulo
         val tvTitle = findViewById<TextView>(R.id.tvTitle)
@@ -36,6 +36,10 @@ class MainActivity : AppCompatActivity() {
 
 
 
+    }
+
+    fun lanzaPreferences(){
+        startActivity(Intent(this, Preferences::class.java))
     }
 
     fun lanzaGeneros(){
