@@ -16,10 +16,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val btnPlay = findViewById<Button>(R.id.btnPlay)
+        btnPlay.setOnClickListener { lanzaPlay() }
+
         //Busacmos y asignamos el view/componente a un objeto(inferido como button)
         //btnNewPlayer en lugar de jugador, es buena practica?
-        val btnNewPlayer = findViewById(R.id.btnNewPlayer) as Button
         //Añadimos listener a ese objeto button y le suministramos la actividad que llevara a cabo
+        val btnNewPlayer = findViewById(R.id.btnNewPlayer) as Button
         btnNewPlayer.setOnClickListener { lanzaNewPlayer() }
 
         val btnPreferences = findViewById<Button>(R.id.btnPreferences)
@@ -36,6 +39,10 @@ class MainActivity : AppCompatActivity() {
 
 
 
+    }
+
+    fun lanzaPlay(){
+        startActivity(Intent(this,Games::class.java))
     }
 
     fun lanzaPreferences(){

@@ -10,8 +10,8 @@
         android:id="@+id/tvOptionTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
         android:text="@string/elige_una_opcion"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:checked="false"
-            android:text="Angry Birds"
+            android:text="@string/angry_birds"
             android:textSize="20sp" />
 
         <RadioButton
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:checked="false"
-            android:text="Dragon fly"
+            android:text="@string/dragon_fly"
             android:textSize="20sp" />
 
         <RadioButton
@@ -48,46 +48,47 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:checked="false"
-            android:text="Hill climbing race"
+            android:text="@string/hill_climbing_race"
             android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Pocket soccer"
+            android:text="@string/pocket_soccer"
             android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/radioButton5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Radiant defense"
+            android:text="@string/radiant_defense"
             android:textSize="20sp" />
 
     </RadioGroup>
+
+    <RatingBar
+        android:id="@+id/rbPuntuacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:max="8"
+        android:numStars="8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <SeekBar
         android:id="@+id/sbPuntuacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:max="8"
         app:layout_constraintBottom_toTopOf="@+id/rbPuntuacion"
         app:layout_constraintEnd_toEndOf="parent"
-        android:max="8"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <RatingBar
-        android:id="@+id/rbPuntuacion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:max="8"
-        android:numStars="8"
-        app:layout_constraintBottom_toTopOf="@+id/fabPreferencesCheck"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -95,10 +96,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="32dp"
         android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:focusable="true"
+        app:fabCustomSize="64dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/sbPuntuacion"
         app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="48dp"
         app:srcCompat="@drawable/ic_preferences_check_foreground"
-        android:focusable="true" />
+        tools:ignore="SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
