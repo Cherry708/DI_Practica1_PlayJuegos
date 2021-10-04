@@ -67,6 +67,29 @@
 
     </RadioGroup>
 
+    <SeekBar
+        android:id="@+id/sbPuntuacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/rbPuntuacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:max="8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RatingBar
+        android:id="@+id/rbPuntuacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:max="8"
+        android:numStars="8"
+        app:layout_constraintBottom_toTopOf="@+id/fabPreferencesCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabPreferencesCheck"
         android:layout_width="wrap_content"
@@ -76,5 +99,6 @@
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_preferences_check_foreground" />
+        app:srcCompat="@drawable/ic_preferences_check_foreground"
+        android:focusable="true" />
 </androidx.constraintlayout.widget.ConstraintLayout>
