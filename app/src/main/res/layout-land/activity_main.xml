@@ -60,7 +60,8 @@
                 android:layout_column="0"
                 android:layout_margin="8dp"
                 android:text="@string/play"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                app:cornerRadius = "15dp"/>
 
             <Button
                 android:id="@+id/btnNewPlayer"
@@ -69,7 +70,8 @@
                 android:layout_column="1"
                 android:layout_margin="8dp"
                 android:text="@string/new_player"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                app:cornerRadius = "15dp"/>
         </TableRow>
 
         <TableRow
@@ -83,7 +85,8 @@
                 android:layout_column="0"
                 android:layout_margin="8dp"
                 android:text="@string/preferences"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                app:cornerRadius = "15dp"/>
 
             <Button
                 android:id="@+id/btnAbout"
@@ -92,7 +95,8 @@
                 android:layout_column="1"
                 android:layout_margin="8dp"
                 android:text="@string/about"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                app:cornerRadius = "15dp"/>
 
         </TableRow>
     </TableLayout>

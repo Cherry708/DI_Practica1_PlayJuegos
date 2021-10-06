@@ -6,23 +6,100 @@
     android:layout_height="match_parent"
     tools:context=".Generos">
 
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottom_appbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_gravity="bottom"
-        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
-        app:fabAlignmentMode="center"
-        app:fabCradleVerticalOffset="12dp"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_add_foreground"
-        app:layout_anchor="@+id/bottom_appbar"
+        app:layout_anchor="@id/bottom_appbar"
         app:maxImageSize="48dp" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_appbar"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        app:fabAlignmentMode="center"
+        app:fabCradleVerticalOffset="12dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plataformas"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PS4" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PC" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XBOX" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WII" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WIIU" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3DS" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PC2" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="260dp"
+            android:layout_height="323dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chipGroup" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

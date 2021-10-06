@@ -10,6 +10,7 @@
     <color name="primaryTextColor">#ffffff</color>
     <color name="secondaryTextColor">#ffffff</color>
 </resources>
+
 <!--
 <resources>
     <color name="primaryColor">#455a64</color>
