@@ -32,6 +32,17 @@
         android:layout_margin="16dp">
 
         <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Géneros"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/chipGroup"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -99,7 +110,7 @@
             android:layout_height="323dp"
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chipGroup" />
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
