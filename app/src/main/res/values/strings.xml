@@ -1,4 +1,12 @@
 <resources>
+    <string name="note1">Rol</string>
+    <string name="note2">Accion</string>
+    <string name="note3">Aventura</string>
+    <string name="note4">Terror</string>
+    <string name="note5">Deportes</string>
+    <string name="note6">Estrategia</string>
+
+
     <string name="app_name">DI_Practica1_PlayJuegos</string>
     <string name="play_juegos">Play Juegos</string>
     <string name="play">Play</string>

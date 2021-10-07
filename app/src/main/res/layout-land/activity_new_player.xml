@@ -83,10 +83,24 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
+            android:contentDescription="@string/todo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imgvCameraIcon"
-            app:srcCompat="@drawable/ic_phone_foreground"
-            android:contentDescription="@string/todo" />
+            app:srcCompat="@drawable/ic_phone_foreground" />
+
+        <Spinner
+            android:id="@+id/spnTelefonos"
+            android:layout_width="211dp"
+            android:layout_height="33dp"
+            android:layout_column="2"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="364dp"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgvPhoneIcon"
+            app:layout_constraintTop_toBottomOf="@+id/etPhone"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageView
             android:id="@+id/imgvPersonExample"
@@ -119,18 +133,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
             android:layout_marginEnd="365dp"
-            android:layout_marginBottom="74dp"
             android:ems="10"
-            android:inputType="phone"
             android:hint="@string/phone"
-            app:layout_constraintBottom_toTopOf="@+id/etEmail"
+            android:importantForAutofill="no"
+            android:inputType="phone"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintHorizontal_bias="0.556"
             app:layout_constraintStart_toEndOf="@+id/imgvPhoneIcon"
-            app:layout_constraintTop_toBottomOf="@+id/imgvPersonExample"
-            app:layout_constraintVertical_bias="0.921"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/imgvPersonExample" />
 
         <EditText
             android:id="@+id/etEmail"

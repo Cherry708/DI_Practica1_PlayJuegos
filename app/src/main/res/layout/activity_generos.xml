@@ -64,53 +64,62 @@
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip17"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PS4" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip16"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PC" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip15"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="XBOX" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip14"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="WII" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip13"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="WIIU" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip12"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3DS" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip11"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PC2" />
         </com.google.android.material.chip.ChipGroup>
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvListaGeneros"
             android:layout_width="260dp"
             android:layout_height="323dp"
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:itemCount="7" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
