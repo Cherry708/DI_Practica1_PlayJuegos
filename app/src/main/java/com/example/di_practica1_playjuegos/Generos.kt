@@ -22,12 +22,12 @@ class Generos : AppCompatActivity() {
 
         //Tema 3, 1.3 Inicio elementos recyclerView
         val items = ArrayList<Tarjeta>()
-        items.add(Tarjeta(R.string.note1))
-        items.add(Tarjeta(R.string.note2))
-        items.add(Tarjeta(R.string.note3))
-        items.add(Tarjeta(R.string.note4))
-        items.add(Tarjeta(R.string.note5))
-        items.add(Tarjeta(R.string.note6))
+        items.add(Tarjeta("Rol"))
+        items.add(Tarjeta("Accion"))
+        items.add(Tarjeta("Aventura"))
+        items.add(Tarjeta("Terror"))
+        items.add(Tarjeta("Deportes"))
+        items.add(Tarjeta("Estrategia"))
 
         val recView = findViewById<RecyclerView>(R.id.rvListaGeneros)
 
