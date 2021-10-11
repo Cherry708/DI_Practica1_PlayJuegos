@@ -59,6 +59,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, NewPlayer::class.java))
     }
 
+    fun lanzaAbout(){
+        startActivity(Intent(this,About::class.java))
+    }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
