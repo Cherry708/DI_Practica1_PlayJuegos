@@ -21,23 +21,23 @@ class Generos : AppCompatActivity() {
         }
 
         //Tema 3, 1.3 Inicio elementos recyclerView
-        val items = ArrayList<Tarjeta>()
-        items.add(Tarjeta("Rol"))
-        items.add(Tarjeta("Accion"))
-        items.add(Tarjeta("Aventura"))
-        items.add(Tarjeta("Terror"))
-        items.add(Tarjeta("Deportes"))
-        items.add(Tarjeta("Estrategia"))
+        val items = ArrayList<ItemTarjeta>()
+        items.add(ItemTarjeta(R.string.note1))
+        items.add(ItemTarjeta(R.string.note2))
+        items.add(ItemTarjeta(R.string.note3))
+        items.add(ItemTarjeta(R.string.note4))
+        items.add(ItemTarjeta(R.string.note5))
+        items.add(ItemTarjeta(R.string.note6))
 
         val recView = findViewById<RecyclerView>(R.id.rvListaGeneros)
 
         recView.setHasFixedSize(true)
 
-        val adaptador = TarjetaAdapter(items)
+        val adaptador = ItemTarjetaAdapter(items)
         recView.adapter = adaptador
         recView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         adaptador.onClick = {
-            Toast.makeText(this@Generos, ""+ items[recView.getChildAdapterPosition(it)].cadena, Toast.LENGTH_LONG).show()
+            Toast.makeText(this@Generos, ""+ resources.getString(items[recView.getChildAdapterPosition(it)].cadena), Toast.LENGTH_LONG).show()
         }
         /*
         Clases: Tarjeta, TarjetaAdapter

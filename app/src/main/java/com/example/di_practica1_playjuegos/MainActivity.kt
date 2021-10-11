@@ -38,6 +38,11 @@ class MainActivity : AppCompatActivity() {
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
+        val about = findViewById<Button>(R.id.btnAbout)
+        about.setOnClickListener {
+            lanzaAbout()
+        }
+
 
     }
 

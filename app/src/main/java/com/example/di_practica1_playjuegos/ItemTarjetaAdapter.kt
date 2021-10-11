@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class TarjetaAdapter(var items: ArrayList<Tarjeta>) : RecyclerView.Adapter<TarjetaAdapter.TarjViewHolder>() {
+class ItemTarjetaAdapter(var items: ArrayList<ItemTarjeta>) : RecyclerView.Adapter<ItemTarjetaAdapter.TarjViewHolder>() {
     lateinit var onClick : (View) -> Unit
 
 
@@ -18,7 +18,7 @@ class TarjetaAdapter(var items: ArrayList<Tarjeta>) : RecyclerView.Adapter<Tarje
             texto = itemView.findViewById(R.id.tvGenero)
         }
 
-        fun bindTarjeta(t: Tarjeta, onClick: (View) -> Unit) = with(itemView) {
+        fun bindTarjeta(t: ItemTarjeta, onClick: (View) -> Unit) = with(itemView) {
             texto.setText(t.cadena)
             setOnClickListener { onClick(itemView) }
         }

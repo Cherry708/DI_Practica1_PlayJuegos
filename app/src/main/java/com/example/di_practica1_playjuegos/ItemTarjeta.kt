@@ -1,4 +1,4 @@
 package com.example.di_practica1_playjuegos
 
-class Tarjeta(val cadena: String) {
+class ItemTarjeta(val cadena: Int) {
 }

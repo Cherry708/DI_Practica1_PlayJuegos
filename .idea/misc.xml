@@ -7,6 +7,7 @@
         <entry key="..\:/Users/RSC-1/AndroidStudioProjects/DI_Practica1_PlayJuegos/app/src/main/res/layout-land/activity_new_player.xml" value="0.31040564373897706" />
         <entry key="..\:/Users/RSC-1/AndroidStudioProjects/DI_Practica1_PlayJuegos/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/RSC-1/AndroidStudioProjects/DI_Practica1_PlayJuegos/app/src/main/res/layout/activity_new_player.xml" value="0.28940217391304346" />
+        <entry key="app/src/main/res/drawable/ic_add_background.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/drawable/ic_navigationAdd_background.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/drawable/ic_navigationAdd_foreground.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.22530864197530864" />
@@ -17,6 +18,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_new_player.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_preferences.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_about.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_generos.xml" value="0.14990942028985507" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.25" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_navigationAdd.xml" value="0.17407407407407408" />
