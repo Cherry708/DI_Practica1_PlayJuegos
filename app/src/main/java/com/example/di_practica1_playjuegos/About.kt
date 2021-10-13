@@ -13,9 +13,15 @@ class About : AppCompatActivity() {
         setContentView(R.layout.activity_about)
 
         val items = ArrayList<ItemAbout>()
-        items.add(ItemAbout(R.drawable.image1,"Nombre","100"))
-        items.add(ItemAbout(R.drawable.image2,"Nombre","100"))
-        items.add(ItemAbout(R.drawable.image3,"Nombre","100"))
+        items.add(ItemAbout(R.drawable.image1,R.string.aboutName1,"100"))
+        items.add(ItemAbout(R.drawable.image2,R.string.aboutName2,"100"))
+        items.add(ItemAbout(R.drawable.image3,R.string.aboutName3,"100"))
+        items.add(ItemAbout(R.drawable.image4,R.string.aboutName4,"100"))
+        items.add(ItemAbout(R.drawable.image5,R.string.aboutName5,"100"))
+        items.add(ItemAbout(R.drawable.image6,R.string.aboutName6,"100"))
+        items.add(ItemAbout(R.drawable.image7,R.string.aboutName7,"100"))
+        items.add(ItemAbout(R.drawable.image8,R.string.aboutName8,"100"))
+
 
         val recView = findViewById<RecyclerView>(R.id.rvAbout)
 
@@ -26,7 +32,7 @@ class About : AppCompatActivity() {
         recView.adapter = adaptador
         recView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         adaptador.onClick = {
-            Toast.makeText(this@About, ""+ items[recView.getChildAdapterPosition(it)], Toast.LENGTH_LONG).show()
+            Toast.makeText(this@About, ""+ resources.getString(items[recView.getChildAdapterPosition(it)].nombre), Toast.LENGTH_LONG).show()
         }
 
     }

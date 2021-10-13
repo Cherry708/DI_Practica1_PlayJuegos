@@ -8,6 +8,7 @@
         android:id="@+id/ivImagen"
         android:layout_width="120dp"
         android:layout_height="120dp"
+        android:layout_margin="8dp"
         android:layout_weight="1"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 

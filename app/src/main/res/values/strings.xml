@@ -6,6 +6,16 @@
     <string name="note5">Deportes</string>
     <string name="note6">Estrategia</string>
 
+    <string name="aboutName1">Ruben</string>
+    <string name="aboutName2">Jorge</string>
+    <string name="aboutName3">Tono</string>
+    <string name="aboutName4">Victor</string>
+    <string name="aboutName5">Xavier</string>
+    <string name="aboutName6">Pablo</string>
+    <string name="aboutName7">Luca</string>
+    <string name="aboutName8">Ruben</string>
+
+
 
     <string name="app_name">DI_Practica1_PlayJuegos</string>
     <string name="play_juegos">Play Juegos</string>
